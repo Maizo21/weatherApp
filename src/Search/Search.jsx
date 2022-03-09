@@ -10,13 +10,22 @@ const Search = () => {
   const capturingCity = async (event) => {
     event.preventDefault();
     const citySearch = city.toLowerCase();
-    await fetch(
-      `https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&cnt=7&appid=c4518dbbb5454289eacfb4c1b2962acb&units=metric`
-    )
-      .then((response) => response.json())
-      .then((data) => {
-        setDataWeather(data);
-      });
+
+    if (city != "") {
+      await fetch(
+        `https://api.openweathermap.org/data/2.5/weather?q=${citySearch}&cnt=7&appid=c4518dbbb5454289eacfb4c1b2962acb&units=metric`
+      )
+        .then((response) => response.json())
+        .then((data) => {
+          if (data.cod === "404") {
+            alert(`City: "${city}" not found`);
+          } else {
+            setDataWeather(data);
+          }
+        });
+    } else {
+      alert("Please enter a city");
+    }
   };
 
   return (
