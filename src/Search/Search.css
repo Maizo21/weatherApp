@@ -1,0 +1,45 @@
+main {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 30px;
+}
+
+h2 {
+  color: #1d76f2;
+}
+
+.formContainer {
+  background-color: #fff;
+  border-radius: 6px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.formContainer input {
+  height: 35px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  padding: 0 10px;
+  font-size: 14px;
+  outline: none;
+}
+
+.formContainer button {
+  border: none;
+}
+
+.formContainer img {
+  width: 20px;
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  cursor: pointer;
+  filter: invert(40%) sepia(48%) saturate(6527%) hue-rotate(205deg)
+    brightness(99%) contrast(91%);
+}

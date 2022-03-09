@@ -1,0 +1,30 @@
+nav {
+  display: grid;
+  grid-template-columns: 1fr 5fr;
+  padding: 15px 10px;
+}
+
+nav img {
+  width: 100%;
+  max-width: 70px;
+}
+
+nav ul {
+  display: flex;
+  justify-items: flex-end;
+  align-items: center;
+  justify-content: flex-end;
+  padding-right: 4vw;
+  column-gap: 30px;
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fafafa;
+  transition: 0.3s;
+}
+
+nav ul li a:hover {
+  color: #1d76f2;
+}
