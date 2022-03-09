@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/weatherApp/static/css/main.8ad11a57.css",
+    "main.js": "/weatherApp/static/js/main.91a072e5.js",
+    "static/media/weather.png": "/weatherApp/static/media/weather.1f5d22d2e1a004e1064a.png",
+    "static/media/humedad.png": "/weatherApp/static/media/humedad.867e829c191e2f88c3f6.png",
+    "static/media/aguanieve.png": "/weatherApp/static/media/aguanieve.afe54830d8922115585a.png",
+    "static/media/noche.png": "/weatherApp/static/media/noche.58d224a1ab58067f5ed3.png",
+    "static/media/lluvia.png": "/weatherApp/static/media/lluvia.3a1b47357fbf2a423ff5.png",
+    "static/media/lluvioso.png": "/weatherApp/static/media/lluvioso.90a280f4aecf298f3cce.png",
+    "static/media/sol.png": "/weatherApp/static/media/sol.4b29007b120ae9397b2b.png",
+    "static/media/nublado.png": "/weatherApp/static/media/nublado.30577753a9d214796e15.png",
+    "static/media/nieve.png": "/weatherApp/static/media/nieve.9670886f95bf430b64f9.png",
+    "static/media/tormenta.png": "/weatherApp/static/media/tormenta.7e6c36dccc23d8482179.png",
+    "index.html": "/weatherApp/index.html",
+    "static/media/search.svg": "/weatherApp/static/media/search.66f944388952b50b56f3ebd51b9411a7.svg",
+    "main.8ad11a57.css.map": "/weatherApp/static/css/main.8ad11a57.css.map",
+    "main.91a072e5.js.map": "/weatherApp/static/js/main.91a072e5.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.8ad11a57.css",
+    "static/js/main.91a072e5.js"
+  ]
+}
