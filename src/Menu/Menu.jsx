@@ -7,7 +7,11 @@ const Menu = () => {
     <>
       <nav>
         <img src={logo} alt="logo" />
-        <ul></ul>
+        <ul>
+          <li>
+            <a href="/citiesSaved">My Cities</a>
+          </li>
+        </ul>
       </nav>
     </>
   );

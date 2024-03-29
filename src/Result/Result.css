@@ -10,7 +10,7 @@
   height: 100%;
   color: #fff;
   padding: 20px;
-  background-color: #1d76f2;
+  background-color: #1d76f2b0;
   margin-top: 35px;
 }
 
@@ -43,9 +43,50 @@
   filter: unset;
 }
 
+.save-city{
+  place-self: end;
+}
+
+.save-city button{
+  border: none;
+  background: transparent;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.save-city button svg{
+  color: #fff;
+  font-size: 1.5rem;
+  transition: all 0.3s;
+  width: 30px;
+  height: 30px;
+
+}
+
+.save-city.saved button svg{
+  fill: #f1f9ff;
+}
+
+.save-city button:hover svg{
+  color: #41b9ff;
+}
+
+.save-city.saved button:hover svg{
+  color: #f1f9ff;
+}
+
 @media (max-width: 840px) {
   .result-container {
     max-width: 380px;
     row-gap: 5px;
+    width: 75%;
+  }
+
+  .result-container h2 {
+    font-size: 1.5rem;
+  }
+
+  .result-container img {
+    max-width: 150px;
   }
 }
