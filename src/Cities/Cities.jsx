@@ -21,7 +21,7 @@ const Cities = () => {
                 <ul className='cities'>
                 {cities.map((city, index) => (
                     <li key={index}>
-                        <a href={`/?city=${city}`}>
+                        <a href={`weatherApp/?city=${city}`}>
                             {city}
                         </a>
                     </li>

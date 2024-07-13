@@ -59,8 +59,11 @@ const Result = (data) => {
       let locationURLParams = new URLSearchParams(window.location.search);
       let city = locationURLParams.get('city');
       if(city !== null){
-        window.location.href = '/';
+        window.location.href = '/weatherApp';
       }
+      setTimeout(() => {
+        window.location.href = '/weatherApp';
+      }, 1000);
     } else {
       let newCities = cities.filter((city) => city !== weather.name);
       localStorage.setItem("cities", JSON.stringify(newCities));
@@ -68,8 +71,11 @@ const Result = (data) => {
       let locationURLParams = new URLSearchParams(window.location.search);
       let city = locationURLParams.get('city');
       if(city !== null){
-        window.location.href = '/';
+        window.location.href = '/weatherApp';
       }
+      setTimeout(() => {
+        window.location.href = '/weatherApp';
+      }, 1000);
     }
   }
 

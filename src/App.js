@@ -14,6 +14,7 @@ function App() {
 
           <Routes>
             <Route path="/" element={<Search />} />
+            <Route path="/weatherApp" element={<Search />} />
             <Route path="/CitiesSaved" element={<CitiesSaved />} />
             <Route path="*" element={<Search />} />
           </Routes>
