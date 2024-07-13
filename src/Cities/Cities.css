@@ -1,0 +1,86 @@
+.cities-container{
+    display: grid;
+    place-content: center;
+    text-align: center;
+}
+
+.cities-container h2{
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+
+.cities-container .subtitle{
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+.cities-container ul.cities{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 0;
+    list-style: none;
+}
+
+.cities-container ul.cities li{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 6px;
+    background-color: #1d76f2b0;
+    color: #fff;
+    place-items: center;
+    position: relative;
+}
+
+.cities-container ul.cities li::after{
+    content: '';
+    position: absolute;
+    bottom: 20%;
+    left: 0;
+    width: 0%;
+    height: 2px;
+    background: #f1f9ff;
+    opacity: 0;
+    transition: 0.3s all linear;
+    border-radius: 6px;
+}
+
+.cities-container ul.cities li:hover::after{
+    opacity: 0.5;
+    left: 24%;
+    width: 50%;
+}
+
+
+.cities-container ul.cities li a{
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    font-size: 1.5rem;
+    transition: 0.3s all linear;
+}
+
+.cities-container ul.cities li a:hover{
+    color: #f1f9ff;
+}
+
+
+@media only screen and (min-width: 100px) and (max-width: 830px) {
+
+    .cities-container ul.cities{
+        grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+        gap: 13px;
+    }
+
+    .cities-container ul.cities li{
+        width: 95%;
+        margin: 0 auto;
+    }
+
+    .cities-container ul.cities li:hover::after{
+        left: 14%;
+        width: 70%;
+    }
+}

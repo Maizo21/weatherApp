@@ -56,12 +56,20 @@ const Result = (data) => {
       cities.push(weather.name);
       localStorage.setItem("cities", JSON.stringify(cities));
       alert("City saved");
-      window.location.reload();
+      let locationURLParams = new URLSearchParams(window.location.search);
+      let city = locationURLParams.get('city');
+      if(city !== null){
+        window.location.href = '/';
+      }
     } else {
       let newCities = cities.filter((city) => city !== weather.name);
       localStorage.setItem("cities", JSON.stringify(newCities));
       alert("City removed");
-      window.location.reload();
+      let locationURLParams = new URLSearchParams(window.location.search);
+      let city = locationURLParams.get('city');
+      if(city !== null){
+        window.location.href = '/';
+      }
     }
   }
 
